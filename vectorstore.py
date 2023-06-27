@@ -18,6 +18,7 @@ def delete_file(file_path):
 
 
 def get_uploaded_file_texts(uploaded_file):
+    print("Chunking your lease")
     # Specify the desired file path to save the uploaded file
     save_directory = "./lease"
 
@@ -51,6 +52,8 @@ def get_uploaded_file_texts(uploaded_file):
 
 
 def embed_and_store(documents):
+    print("Adding texts to vectorstore")
+
     vectorstore = get_vectorstore()
     vectorstore.add_texts(
         [document.page_content for document in documents],

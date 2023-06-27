@@ -170,7 +170,7 @@ def get_counsel_questions():
     titles = [
         "Objectionable Conduct",
         "Landlord Early Termination",
-        "Tenant Early Termination"
+        "Tenant Early Termination",
         "Fees",
         "Negligence",
         "Indemnifications",

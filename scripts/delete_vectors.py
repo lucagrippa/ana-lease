@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 
 
 def delete_vectors():
+    print("Deleting vectors")
     pinecone.init(
         api_key=os.getenv("PINECONE_API_KEY"),  # find at app.pinecone.io
         environment=os.getenv("PINECONE_ENV")  # next to api key in console

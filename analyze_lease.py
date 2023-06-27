@@ -89,8 +89,10 @@ def lease_consel_analysis(llm):
 def analyze_lease(pages):
     llm = ChatOpenAI(temperature=0.0)
 
+    print("Asking summary questions")
     lease_summary(llm)
 
+    print("Asking counsel questions")
     lease_consel_analysis(llm)
 
 
